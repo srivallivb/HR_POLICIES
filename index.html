@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Policy Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Policy Guide — AI Assistant for HR Policies</h1>
+    <div class="Upload-section">
+        <label id="fileInputLabel" for="fileInput" title="Upload PDF or Text File">📁 Upload HR Policy (PDF or Text)</label>
+        <input type="file" id="fileInput" accept=".pdf,.txt" />
+        <textarea id="hrPolicy" placeholder="HR policy text here......."></textarea>
+    </div>
+
+    <div class="interaction-section">
+        <label for="query">Your Question:</label>
+        <input type="text" id="query" placeholder="Type your question here....(e.g., What is the notice period?)">
+        <button id="askButton">Ask</button>
+    </div>
+
+    <div id="output">
+        <div id="response" aria-live="polite"></div>
+        <div id="source"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
